@@ -28,7 +28,7 @@ export const GMaps = ({
   const addressQuery = address;
   // t=k for satellite
   const url_params = {
-    q: addressQuery,
+    q: addressQuery || "123 Main St",
     t: mapType,
     z: "13",
     ie: "UTF8",
@@ -69,8 +69,8 @@ export default WithControls(GMaps, [
     id: "custom-map-setup",
     label: controlLabel,
     Button: (props) => (
-      <ControlButton label={controlLabel} active={true} {...props}>
-        An Icon
+      <ControlButton label={controlLabel} active={false} {...props}>
+        Map Settings
       </ControlButton>
     ),
     Panel,

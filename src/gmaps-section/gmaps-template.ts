@@ -1,16 +1,16 @@
 export const GMapsTemplate = {
   templates: {
     children: {
-      id: 'children',
-      name: 'Google Maps',
-      defaultLayoutId: 'GmapsLarge001',
-      renderer: 'grid',
+      id: "children",
+      name: "Google Maps",
+      defaultLayoutId: "GmapsLarge001",
+      renderer: "grid",
       layouts: {
         GmapsLarge001: {
-          id: 'GmapsLarge001',
-          displayName: 'Google Maps Desktop',
+          id: "GmapsLarge001",
+          displayName: "Google Maps Desktop",
           data: {
-            columns: { type: 'auto', count: 12 },
+            columns: { type: "auto", count: 12 },
             columnGap: 12,
             padding: {
               top: 85,
@@ -34,8 +34,8 @@ export const GMapsTemplate = {
                 left: 0,
               },
               alignment: {
-                x: 'center',
-                y: 'center',
+                x: "center",
+                y: "center",
               },
             },
             description: {
@@ -52,8 +52,8 @@ export const GMapsTemplate = {
                 left: 0,
               },
               alignment: {
-                x: 'center',
-                y: 'center',
+                x: "center",
+                y: "center",
               },
             },
             gmaps: {
@@ -70,17 +70,17 @@ export const GMapsTemplate = {
                 left: 0,
               },
               alignment: {
-                x: 'stretch',
-                y: 'stretch',
+                x: "stretch",
+                y: "stretch",
               },
             },
           },
         },
         GmapsLarge002: {
-          id: 'GmapsLarge002',
-          displayName: 'Google Maps Desktop',
+          id: "GmapsLarge002",
+          displayName: "Google Maps Desktop",
           data: {
-            columns: { type: 'auto', count: 12 },
+            columns: { type: "auto", count: 12 },
             columnGap: 12,
             padding: {
               top: 85,
@@ -104,8 +104,8 @@ export const GMapsTemplate = {
                 left: 0,
               },
               alignment: {
-                x: 'center',
-                y: 'center',
+                x: "center",
+                y: "center",
               },
             },
             description: {
@@ -122,8 +122,8 @@ export const GMapsTemplate = {
                 left: 0,
               },
               alignment: {
-                x: 'center',
-                y: 'center',
+                x: "center",
+                y: "center",
               },
             },
             gmaps: {
@@ -140,17 +140,17 @@ export const GMapsTemplate = {
                 left: 0,
               },
               alignment: {
-                x: 'stretch',
-                y: 'stretch',
+                x: "stretch",
+                y: "stretch",
               },
             },
           },
         },
         GmapsSmall001: {
-          id: 'GmapsSmall001',
-          displayName: 'Google Maps Mobile',
+          id: "GmapsSmall001",
+          displayName: "Google Maps Mobile",
           data: {
-            columns: { type: 'auto', count: 12 },
+            columns: { type: "auto", count: 12 },
             columnGap: 12,
             padding: {
               top: 20,
@@ -174,8 +174,8 @@ export const GMapsTemplate = {
                 left: 0,
               },
               alignment: {
-                x: 'stretch',
-                y: 'stretch',
+                x: "stretch",
+                y: "stretch",
               },
             },
             description: {
@@ -192,8 +192,8 @@ export const GMapsTemplate = {
                 left: 0,
               },
               alignment: {
-                x: 'stretch',
-                y: 'stretch',
+                x: "stretch",
+                y: "stretch",
               },
             },
             gmaps: {
@@ -210,8 +210,8 @@ export const GMapsTemplate = {
                 left: 0,
               },
               alignment: {
-                x: 'stretch',
-                y: 'stretch',
+                x: "stretch",
+                y: "stretch",
               },
             },
           },
@@ -220,11 +220,11 @@ export const GMapsTemplate = {
       slots: {
         heading: {
           placeholder: {
-            contentTypeId: 'heading1',
+            contentTypeId: "heading1",
             data: {
-              value: 'Google Maps Section',
+              value: "Google Maps Section",
               styles: {
-                textAlign: 'center',
+                textAlign: "center",
               },
             },
             overrides: {},
@@ -232,11 +232,11 @@ export const GMapsTemplate = {
         },
         description: {
           placeholder: {
-            contentTypeId: 'text',
+            contentTypeId: "text",
             data: {
               value: [
                 {
-                  type: 'paragraph',
+                  type: "paragraph",
                   children: [
                     {
                       text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -250,9 +250,9 @@ export const GMapsTemplate = {
         },
         gmaps: {
           placeholder: {
-            contentTypeId: 'gmaps',
+            contentTypeId: "gmaps",
             data: {
-              address: 'address',
+              address: "123 Main St",
               height: 200,
               width: 300,
             },
@@ -261,27 +261,27 @@ export const GMapsTemplate = {
         },
       },
       options: {
-        '001': {
-          id: '001',
-          displayName: 'Google Maps 1',
+        "001": {
+          id: "001",
+          displayName: "Google Maps 1",
           breakpoints: {
             lg: {
-              layoutId: 'GmapsLarge001',
+              layoutId: "GmapsLarge001",
             },
             sm: {
-              layoutId: 'GmapsSmall001',
+              layoutId: "GmapsSmall001",
             },
           },
         },
-        '002': {
-          id: '002',
-          displayName: 'Google Maps 2',
+        "002": {
+          id: "002",
+          displayName: "Google Maps 2",
           breakpoints: {
             lg: {
-              layoutId: 'GmapsLarge002',
+              layoutId: "GmapsLarge002",
             },
             sm: {
-              layoutId: 'GmapsSmall001',
+              layoutId: "GmapsSmall001",
             },
           },
         },
