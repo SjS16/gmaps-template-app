@@ -1,0 +1,11 @@
+.DS_STORE
+*.log
+build
+build.properties
+node_modules
+npm-debug.*
+dist
+coverage
+.make
+.idea/
+.npm/

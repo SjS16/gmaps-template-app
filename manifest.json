@@ -1,0 +1,13 @@
+{
+  "extensionId": "@external/GMaps",
+  "version": "0.1",
+  "name": "Google Maps",
+  "isBeta": true,
+  "sectionTabId": "gmaps-section",
+  "description": "Google Maps example",
+  "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Google_Maps_icon_%282020%29.svg",
+  "moreInfoUrl": "https://commons.wikimedia.org/wiki/File:Google_Maps_icon_(2020).svg",
+  "categories": [],
+  "include": [],
+  "externalScripts": ["http://localhost:8081/index.js"]
+}
