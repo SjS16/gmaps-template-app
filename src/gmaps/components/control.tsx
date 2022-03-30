@@ -6,9 +6,11 @@ import {
   PanelContent,
   PanelTitle,
   StyledToggle,
+  StyledNumberField,
+  StyledInputField,
+  StyledSuffixSpan,
 } from "../styled";
 import { DataStructure } from "./gmaps";
-import { InputField } from "config/global-dependencies/smart-builder-components";
 import React from "react";
 import { ControlPanelProps } from "unbounce-smart-builder-sdk-types";
 
@@ -25,7 +27,7 @@ export const Panel = ({ dispatch, data }: ControlPanelProps<DataStructure>) => {
       <PanelContent>
         <div>
           <Label>Address</Label>
-          <InputField
+          <StyledInputField
             minimal
             onChange={(e: any) =>
               dispatch((api: any) =>
@@ -48,8 +50,9 @@ export const Panel = ({ dispatch, data }: ControlPanelProps<DataStructure>) => {
         </MapType>
         <div>
           <Label>Width</Label>
-          <InputField
+          <StyledNumberField
             type="number"
+            minimal
             value={data.width.toString()}
             onChange={(e: any) =>
               dispatch((api: any) =>
@@ -57,12 +60,13 @@ export const Panel = ({ dispatch, data }: ControlPanelProps<DataStructure>) => {
               )
             }
           />
-          px
+          <StyledSuffixSpan>px</StyledSuffixSpan>
         </div>
         <div>
           <Label>Height</Label>
-          <InputField
+          <StyledNumberField
             type="number"
+            minimal
             value={data.height.toString()}
             onChange={(e: any) =>
               dispatch((api: any) =>
@@ -70,7 +74,7 @@ export const Panel = ({ dispatch, data }: ControlPanelProps<DataStructure>) => {
               )
             }
           />
-          px
+          <StyledSuffixSpan>px</StyledSuffixSpan>
         </div>
       </PanelContent>
     </ControlPanel>

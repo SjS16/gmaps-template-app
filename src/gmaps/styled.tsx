@@ -1,5 +1,6 @@
 import {
   GroupRadioButton,
+  InputField,
   Toggle,
 } from "config/global-dependencies/smart-builder-components";
 import styled from "styled-components";
@@ -30,6 +31,8 @@ export const PanelContent = styled.div`
   overflow: auto;
   max-height: 425px;
   padding: 32px 32px calc(64px);
+  display: grid;
+  gap: 16px;
 `;
 
 export const MapType = styled.div`
@@ -54,4 +57,33 @@ export const Label = styled.div`
 export const StyledToggle = styled(Toggle)`
   transform: scale(0.5);
   margin-right: -15px;
+`;
+
+export const StyledNumberField = styled(InputField)`
+  font-size: 20px;
+  font-weight: 400;
+  width: 75%;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+`;
+
+export const StyledInputField = styled(InputField)`
+  font-size: 20px;
+  font-weight: 400;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+`;
+
+export const StyledSuffixSpan = styled.span`
+  margin: auto 0px 0px;
+  padding: 0px;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(48, 48, 48);
 `;
