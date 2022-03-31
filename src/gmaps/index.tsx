@@ -8,6 +8,7 @@ const schema = Schema.object({
   width: Schema.number(),
   height: Schema.number(),
   satellite: Schema.boolean(),
+  size: Schema.string(),
 }).noControls();
 
 export const Component = component({

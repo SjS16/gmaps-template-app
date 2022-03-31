@@ -5,6 +5,22 @@ import {
 } from "config/global-dependencies/smart-builder-components";
 import styled from "styled-components";
 
+export const StyledGroupRadioButton = styled(GroupRadioButton)`
+  label {
+    font-size: 20px;
+    display: contents;
+    color: #303030;
+    font-weight: 400;
+  }
+`;
+
+export const StyledMapsContainer = styled.div`
+  padding: 0 0 0 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+`;
+
 export const ControlPanel = styled.div`
   position: absolute;
   top: calc(100% + 5px);

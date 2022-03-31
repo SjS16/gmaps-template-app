@@ -1,9 +1,9 @@
 // eslint-disable-next-line
+import { StyledMapsContainer } from "../styled";
 import { Panel } from "./control";
 import {
   ControlButton,
   WithControls,
-  WithStyles,
 } from "config/global-dependencies/smart-builder-sdk";
 import React from "react";
 import {
@@ -16,12 +16,13 @@ export type DataStructure = {
   satellite: boolean;
   width: number;
   height: number;
+  size: string;
 };
 
 export const GMaps = ({
   data,
 }: ComponentProps<DataStructure, WithStylesProps>) => {
-  const { address, satellite, width, height } = data;
+  const { address, satellite, width, height, size } = data;
 
   const mapType = satellite ? "k" : "";
 
@@ -46,7 +47,7 @@ export const GMaps = ({
 
   return (
     <>
-      <div data-testid="gmaps-content">
+      {size === "fixed" && (
         <iframe
           width={width}
           height={height}
@@ -57,7 +58,21 @@ export const GMaps = ({
           marginWidth={0}
           frameBorder={0}
         ></iframe>
-      </div>
+      )}
+      {size === "responsive" && (
+        <StyledMapsContainer>
+          <iframe
+            width={"100%"}
+            height={"100%"}
+            id="gmap_canvas"
+            src={mapsUrl}
+            scrolling="no"
+            marginHeight={0}
+            marginWidth={0}
+            frameBorder={0}
+          ></iframe>
+        </StyledMapsContainer>
+      )}
     </>
   );
 };

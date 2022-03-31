@@ -255,6 +255,8 @@ export const GMapsTemplate = {
               address: "123 Main St",
               height: 200,
               width: 300,
+              satellite: false,
+              size: "fixed",
             },
             overrides: {},
           },
