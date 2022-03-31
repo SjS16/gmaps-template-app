@@ -1,3 +1,4 @@
+import { AddressComponent } from "./address";
 import { Component } from "./gmaps";
 import { Template } from "./gmaps-section";
 import {
@@ -9,5 +10,6 @@ import {
  * Feel free to register whatever you need to export.
  * IMPORTANT: Registration ordering is important.
  */
+registerComponent(AddressComponent);
 registerComponent(Component);
 registerSection(Template);

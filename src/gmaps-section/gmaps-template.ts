@@ -550,6 +550,218 @@ export const GMapsTemplate = {
             },
           },
         },
+        GmapsLarge008: {
+          id: "GmapsLarge008",
+          displayName: "Google Maps Desktop Address",
+          data: {
+            columns: { type: "auto", count: 12 },
+            columnGap: 12,
+            padding: {
+              top: 85,
+              right: 0,
+              bottom: 85,
+              left: 0,
+            },
+          },
+          slots: {
+            heading: {
+              order: 0,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            address: {
+              order: 2,
+              visible: true,
+              column: {
+                start: 2,
+                end: 6,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            gmaps: {
+              order: 3,
+              visible: true,
+              column: {
+                start: 7,
+                end: 12,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+          },
+        },
+        GmapsLarge009: {
+          id: "GmapsLarge009",
+          displayName: "Google Maps Desktop Multiple Maps 2",
+          data: {
+            columns: { type: "auto", count: 12 },
+            columnGap: 12,
+            padding: {
+              top: 85,
+              right: 0,
+              bottom: 85,
+              left: 0,
+            },
+          },
+          slots: {
+            heading: {
+              order: 0,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            gmaps: {
+              order: 1,
+              visible: true,
+              column: {
+                start: 3,
+                end: 4,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            gmaps1: {
+              order: 1,
+              visible: true,
+              column: {
+                start: 6,
+                end: 7,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            gmaps2: {
+              order: 1,
+              visible: true,
+              column: {
+                start: 9,
+                end: 10,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            address: {
+              order: 2,
+              visible: true,
+              column: {
+                start: 3,
+                end: 4,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            address1: {
+              order: 2,
+              visible: true,
+              column: {
+                start: 6,
+                end: 7,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            address2: {
+              order: 2,
+              visible: true,
+              column: {
+                start: 9,
+                end: 10,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+          },
+        },
         GmapsSmall001: {
           id: "GmapsSmall001",
           displayName: "Google Maps Mobile",
@@ -614,8 +826,554 @@ export const GMapsTemplate = {
                 left: 0,
               },
               alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+          },
+        },
+        GmapsSmall002: {
+          id: "GmapsSmall002",
+          displayName: "Google Maps Mobile 2",
+          data: {
+            columns: { type: "auto", count: 12 },
+            columnGap: 12,
+            padding: {
+              top: 20,
+              right: 20,
+              bottom: 20,
+              left: 20,
+            },
+          },
+          slots: {
+            heading: {
+              order: 0,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
                 x: "stretch",
                 y: "stretch",
+              },
+            },
+            description: {
+              order: 2,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "stretch",
+                y: "stretch",
+              },
+            },
+            gmaps: {
+              order: 1,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+          },
+        },
+        GmapsSmall003: {
+          id: "GmapsSmall003",
+          displayName: "Google Maps Mobile Call to Action 1",
+          data: {
+            columns: { type: "auto", count: 12 },
+            columnGap: 12,
+            padding: {
+              top: 20,
+              right: 20,
+              bottom: 20,
+              left: 20,
+            },
+          },
+          slots: {
+            heading: {
+              order: 0,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "stretch",
+                y: "stretch",
+              },
+            },
+            description: {
+              order: 2,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "stretch",
+                y: "stretch",
+              },
+            },
+            gmaps: {
+              order: 1,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            button: {
+              order: 3,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+          },
+        },
+        GmapsSmall004: {
+          id: "GmapsSmall004",
+          displayName: "Google Maps Mobile Call to Action 2",
+          data: {
+            columns: { type: "auto", count: 12 },
+            columnGap: 12,
+            padding: {
+              top: 20,
+              right: 20,
+              bottom: 20,
+              left: 20,
+            },
+          },
+          slots: {
+            heading: {
+              order: 0,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "stretch",
+                y: "stretch",
+              },
+            },
+            description: {
+              order: 1,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "stretch",
+                y: "stretch",
+              },
+            },
+            gmaps: {
+              order: 3,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            button: {
+              order: 2,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+          },
+        },
+        GmapsSmall005: {
+          id: "GmapsSmall005",
+          displayName: "Google Maps Mobile Multiple Maps 1",
+          data: {
+            columns: { type: "auto", count: 12 },
+            columnGap: 12,
+            padding: {
+              top: 20,
+              right: 20,
+              bottom: 20,
+              left: 20,
+            },
+          },
+          slots: {
+            heading: {
+              order: 0,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "stretch",
+                y: "stretch",
+              },
+            },
+            gmaps: {
+              order: 1,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 10,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            gmaps1: {
+              order: 2,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 10,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            gmaps2: {
+              order: 3,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+          },
+        },
+        GmapsSmall006: {
+          id: "GmapsSmall006",
+          displayName: "Google Maps Mobile Address 1",
+          data: {
+            columns: { type: "auto", count: 12 },
+            columnGap: 12,
+            padding: {
+              top: 20,
+              right: 20,
+              bottom: 20,
+              left: 20,
+            },
+          },
+          slots: {
+            heading: {
+              order: 0,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "stretch",
+                y: "stretch",
+              },
+            },
+            gmaps: {
+              order: 1,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            address: {
+              order: 2,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 50,
+                bottom: 0,
+                left: 50,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+          },
+        },
+        GmapsSmall007: {
+          id: "GmapsSmall007",
+          displayName: "Google Maps Mobile Multiple Maps with Address1",
+          data: {
+            columns: { type: "auto", count: 12 },
+            columnGap: 12,
+            padding: {
+              top: 20,
+              right: 20,
+              bottom: 20,
+              left: 20,
+            },
+          },
+          slots: {
+            heading: {
+              order: 0,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "stretch",
+                y: "stretch",
+              },
+            },
+            gmaps: {
+              order: 1,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 10,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            address: {
+              order: 2,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 50,
+                bottom: 50,
+                left: 50,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            gmaps1: {
+              order: 3,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 10,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            address1: {
+              order: 4,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 50,
+                bottom: 50,
+                left: 50,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            gmaps2: {
+              order: 5,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 10,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            address2: {
+              order: 6,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 50,
+                bottom: 50,
+                left: 50,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
               },
             },
           },
@@ -699,6 +1457,45 @@ export const GMapsTemplate = {
             overrides: {},
           },
         },
+        address: {
+          placeholder: {
+            contentTypeId: "address",
+            data: {
+              address_line_1: "Address Line 1",
+              address_line_2: "Address Line 2",
+              address_zipcode: "Zip Code",
+              address_country: "Country",
+              address_telephone: "Telephone",
+            },
+            overrides: {},
+          },
+        },
+        address1: {
+          placeholder: {
+            contentTypeId: "address",
+            data: {
+              address_line_1: "Address Line 1",
+              address_line_2: "Address Line 2",
+              address_zipcode: "Zip Code",
+              address_country: "Country",
+              address_telephone: "Telephone",
+            },
+            overrides: {},
+          },
+        },
+        address2: {
+          placeholder: {
+            contentTypeId: "address",
+            data: {
+              address_line_1: "Address Line 1",
+              address_line_2: "Address Line 2",
+              address_zipcode: "Zip Code",
+              address_country: "Country",
+              address_telephone: "Telephone",
+            },
+            overrides: {},
+          },
+        },
         gmapsLarge: {
           placeholder: {
             contentTypeId: "gmaps",
@@ -734,7 +1531,7 @@ export const GMapsTemplate = {
               layoutId: "GmapsLarge002",
             },
             sm: {
-              layoutId: "GmapsSmall001",
+              layoutId: "GmapsSmall002",
             },
           },
         },
@@ -758,7 +1555,7 @@ export const GMapsTemplate = {
               layoutId: "GmapsLarge004",
             },
             sm: {
-              layoutId: "GmapsSmall001",
+              layoutId: "GmapsSmall002",
             },
           },
         },
@@ -770,7 +1567,7 @@ export const GMapsTemplate = {
               layoutId: "GmapsLarge005",
             },
             sm: {
-              layoutId: "GmapsSmall001",
+              layoutId: "GmapsSmall003",
             },
           },
         },
@@ -782,7 +1579,7 @@ export const GMapsTemplate = {
               layoutId: "GmapsLarge006",
             },
             sm: {
-              layoutId: "GmapsSmall001",
+              layoutId: "GmapsSmall004",
             },
           },
         },
@@ -794,7 +1591,31 @@ export const GMapsTemplate = {
               layoutId: "GmapsLarge007",
             },
             sm: {
-              layoutId: "GmapsSmall001",
+              layoutId: "GmapsSmall005",
+            },
+          },
+        },
+        "008": {
+          id: "008",
+          displayName: "Google Maps Address",
+          breakpoints: {
+            lg: {
+              layoutId: "GmapsLarge008",
+            },
+            sm: {
+              layoutId: "GmapsSmall006",
+            },
+          },
+        },
+        "009": {
+          id: "009",
+          displayName: "Google Maps Multiple Address",
+          breakpoints: {
+            lg: {
+              layoutId: "GmapsLarge009",
+            },
+            sm: {
+              layoutId: "GmapsSmall007",
             },
           },
         },
