@@ -8,7 +8,7 @@ export const GMapsTemplate = {
       layouts: {
         GmapsLarge001: {
           id: "GmapsLarge001",
-          displayName: "Google Maps Desktop",
+          displayName: "Google Maps Desktop Horizontal 1",
           data: {
             columns: { type: "auto", count: 12 },
             columnGap: 12,
@@ -42,7 +42,7 @@ export const GMapsTemplate = {
               order: 1,
               visible: true,
               column: {
-                start: 1,
+                start: 2,
                 end: 6,
               },
               padding: {
@@ -61,7 +61,7 @@ export const GMapsTemplate = {
               visible: true,
               column: {
                 start: 7,
-                end: 13,
+                end: 12,
               },
               padding: {
                 top: 0,
@@ -70,15 +70,225 @@ export const GMapsTemplate = {
                 left: 0,
               },
               alignment: {
-                x: "stretch",
-                y: "stretch",
+                x: "center",
+                y: "center",
               },
             },
           },
         },
         GmapsLarge002: {
           id: "GmapsLarge002",
-          displayName: "Google Maps Desktop",
+          displayName: "Google Maps Desktop Horizontal 2",
+          data: {
+            columns: { type: "auto", count: 12 },
+            columnGap: 12,
+            padding: {
+              top: 85,
+              right: 0,
+              bottom: 85,
+              left: 0,
+            },
+          },
+          slots: {
+            heading: {
+              order: 0,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            description: {
+              order: 2,
+              visible: true,
+              column: {
+                start: 7,
+                end: 12,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            gmaps: {
+              order: 1,
+              visible: true,
+              column: {
+                start: 2,
+                end: 6,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+          },
+        },
+        GmapsLarge003: {
+          id: "GmapsLarge003",
+          displayName: "Google Maps Desktop Vertical 1",
+          data: {
+            columns: { type: "auto", count: 12 },
+            columnGap: 12,
+            padding: {
+              top: 85,
+              right: 0,
+              bottom: 85,
+              left: 0,
+            },
+          },
+          slots: {
+            heading: {
+              order: 0,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            description: {
+              order: 1,
+              visible: true,
+              column: {
+                start: 2,
+                end: 12,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            gmapsLarge: {
+              order: 2,
+              visible: true,
+              column: {
+                start: 2,
+                end: 12,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+          },
+        },
+        GmapsLarge004: {
+          id: "GmapsLarge004",
+          displayName: "Google Maps Desktop Vertical 2",
+          data: {
+            columns: { type: "auto", count: 12 },
+            columnGap: 12,
+            padding: {
+              top: 85,
+              right: 0,
+              bottom: 85,
+              left: 0,
+            },
+          },
+          slots: {
+            heading: {
+              order: 0,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            description: {
+              order: 2,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            gmapsLarge: {
+              order: 1,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+          },
+        },
+        GmapsLarge005: {
+          id: "GmapsLarge005",
+          displayName: "Google Maps Desktop Call to Action 1",
           data: {
             columns: { type: "auto", count: 12 },
             columnGap: 12,
@@ -126,11 +336,29 @@ export const GMapsTemplate = {
                 y: "center",
               },
             },
+            button: {
+              order: 3,
+              visible: true,
+              column: {
+                start: 7,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
             gmaps: {
               order: 1,
               visible: true,
               column: {
-                start: 1,
+                start: 2,
                 end: 6,
               },
               padding: {
@@ -140,8 +368,184 @@ export const GMapsTemplate = {
                 left: 0,
               },
               alignment: {
-                x: "stretch",
-                y: "stretch",
+                x: "center",
+                y: "center",
+              },
+            },
+          },
+        },
+        GmapsLarge006: {
+          id: "GmapsLarge006",
+          displayName: "Google Maps Desktop Call to Action 2",
+          data: {
+            columns: { type: "auto", count: 12 },
+            columnGap: 12,
+            padding: {
+              top: 85,
+              right: 0,
+              bottom: 85,
+              left: 0,
+            },
+          },
+          slots: {
+            heading: {
+              order: 0,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            description: {
+              order: 1,
+              visible: true,
+              column: {
+                start: 2,
+                end: 6,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            button: {
+              order: 3,
+              visible: true,
+              column: {
+                start: 2,
+                end: 6,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            gmaps: {
+              order: 2,
+              visible: true,
+              column: {
+                start: 7,
+                end: 12,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+          },
+        },
+        GmapsLarge007: {
+          id: "GmapsLarge007",
+          displayName: "Google Maps Desktop Multiple Maps 1",
+          data: {
+            columns: { type: "auto", count: 12 },
+            columnGap: 12,
+            padding: {
+              top: 85,
+              right: 0,
+              bottom: 85,
+              left: 0,
+            },
+          },
+          slots: {
+            heading: {
+              order: 0,
+              visible: true,
+              column: {
+                start: 1,
+                end: 13,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            gmaps: {
+              order: 1,
+              visible: true,
+              column: {
+                start: 3,
+                end: 4,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            gmaps1: {
+              order: 1,
+              visible: true,
+              column: {
+                start: 6,
+                end: 7,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
+              },
+            },
+            gmaps2: {
+              order: 1,
+              visible: true,
+              column: {
+                start: 9,
+                end: 10,
+              },
+              padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+              },
+              alignment: {
+                x: "center",
+                y: "center",
               },
             },
           },
@@ -248,6 +652,14 @@ export const GMapsTemplate = {
             overrides: {},
           },
         },
+        button: {
+          placeholder: {
+            contentTypeId: "button",
+            data: {
+              text: "Call to Action",
+            },
+          },
+        },
         gmaps: {
           placeholder: {
             contentTypeId: "gmaps",
@@ -261,11 +673,50 @@ export const GMapsTemplate = {
             overrides: {},
           },
         },
+        gmaps1: {
+          placeholder: {
+            contentTypeId: "gmaps",
+            data: {
+              address: "123 Vancouver St",
+              height: 200,
+              width: 300,
+              satellite: false,
+              size: "fixed",
+            },
+            overrides: {},
+          },
+        },
+        gmaps2: {
+          placeholder: {
+            contentTypeId: "gmaps",
+            data: {
+              address: "123 Marine Dr",
+              height: 200,
+              width: 300,
+              satellite: false,
+              size: "fixed",
+            },
+            overrides: {},
+          },
+        },
+        gmapsLarge: {
+          placeholder: {
+            contentTypeId: "gmaps",
+            data: {
+              address: "123 Main St",
+              height: 500,
+              width: 500,
+              satellite: false,
+              size: "fixed",
+            },
+            overrides: {},
+          },
+        },
       },
       options: {
         "001": {
           id: "001",
-          displayName: "Google Maps 1",
+          displayName: "Google Maps Horizontal 1",
           breakpoints: {
             lg: {
               layoutId: "GmapsLarge001",
@@ -277,10 +728,70 @@ export const GMapsTemplate = {
         },
         "002": {
           id: "002",
-          displayName: "Google Maps 2",
+          displayName: "Google Maps Horizontal 2",
           breakpoints: {
             lg: {
               layoutId: "GmapsLarge002",
+            },
+            sm: {
+              layoutId: "GmapsSmall001",
+            },
+          },
+        },
+        "003": {
+          id: "003",
+          displayName: "Google Maps Vertical 1",
+          breakpoints: {
+            lg: {
+              layoutId: "GmapsLarge003",
+            },
+            sm: {
+              layoutId: "GmapsSmall001",
+            },
+          },
+        },
+        "004": {
+          id: "004",
+          displayName: "Google Maps Vertical 2",
+          breakpoints: {
+            lg: {
+              layoutId: "GmapsLarge004",
+            },
+            sm: {
+              layoutId: "GmapsSmall001",
+            },
+          },
+        },
+        "005": {
+          id: "005",
+          displayName: "Google Maps Call to Action 1",
+          breakpoints: {
+            lg: {
+              layoutId: "GmapsLarge005",
+            },
+            sm: {
+              layoutId: "GmapsSmall001",
+            },
+          },
+        },
+        "006": {
+          id: "006",
+          displayName: "Google Maps Call to Action 2",
+          breakpoints: {
+            lg: {
+              layoutId: "GmapsLarge006",
+            },
+            sm: {
+              layoutId: "GmapsSmall001",
+            },
+          },
+        },
+        "007": {
+          id: "007",
+          displayName: "Google Maps Multiple Maps",
+          breakpoints: {
+            lg: {
+              layoutId: "GmapsLarge007",
             },
             sm: {
               layoutId: "GmapsSmall001",
