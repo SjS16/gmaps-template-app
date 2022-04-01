@@ -5,12 +5,12 @@ import { component, Schema } from "config/global-dependencies/ub-shared";
 import React from "react";
 
 const schema = Schema.object({
-  address_line_1: Schema.string(),
-  address_line_2: Schema.string(),
-  address_zipcode: Schema.string(),
-  address_country: Schema.string(),
-  address_telephone: Schema.string(),
-  address_email: Schema.string(),
+  address_line_1: Schema.string().default("Address Line 1"),
+  address_line_2: Schema.string().default("Address Line 2"),
+  address_zipcode: Schema.string().default("Zip Code"),
+  address_country: Schema.string().default("Country"),
+  address_telephone: Schema.string().default("Telephone"),
+  address_email: Schema.string().default("Email"),
 }).groupControls({ icon: <BrushIcon />, label: "Address Details" });
 
 export const AddressComponent = component({

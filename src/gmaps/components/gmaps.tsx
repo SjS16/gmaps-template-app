@@ -23,28 +23,9 @@ export type DataStructure = {
 export const GMaps = ({
   data,
 }: ComponentProps<DataStructure, WithStylesProps>) => {
-  const { address, satellite, width, height, size } = data;
+  const { width, height, size } = data;
 
-  const mapType = satellite ? "k" : "";
-
-  const addressQuery = address;
-
-  const url_params = {
-    q: addressQuery || "123 Main St",
-    t: mapType,
-    z: "13",
-    ie: "UTF8",
-    iwloc: "",
-    output: "embed",
-  };
-
-  const url = new URL("https://maps.google.com/maps");
-
-  const queryParams = new URLSearchParams(
-    Object.entries(url_params)
-  ).toString();
-
-  const mapsUrl = new URL(`${url}?${queryParams}`).toString();
+  const mapsUrl = getMapsUrl(data);
 
   return (
     <>
@@ -78,6 +59,29 @@ export const GMaps = ({
       )}
     </>
   );
+};
+
+const getMapsUrl = (data: DataStructure) => {
+  const { satellite, address } = data;
+  const mapType = satellite ? "k" : "";
+
+  const url_params = {
+    q: address || "123 Main St",
+    t: mapType,
+    z: "13",
+    ie: "UTF8",
+    iwloc: "",
+    output: "embed",
+  };
+
+  const url = new URL("https://maps.google.com/maps");
+
+  const queryParams = new URLSearchParams(
+    Object.entries(url_params)
+  ).toString();
+
+  const mapsUrl = new URL(`${url}?${queryParams}`).toString();
+  return mapsUrl;
 };
 
 const controlLabel = "Map Settings";

@@ -1,4 +1,4 @@
-# sb-sample-extension
+# Google Maps Smart Builder App
 
 ## Developing apps locally using the Smart Builder
 
@@ -10,3 +10,5 @@
 6. Copy and paste the `manifest.json` file from this repo into the box.
 7. Now scroll up and find your app in the sidebar. Press the + button in the corner.
 8. Voila - you are now using the local version your app running on your machine.
+
+- Please see documentation folder for logos, presentations and documentation

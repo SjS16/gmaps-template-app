@@ -33,9 +33,9 @@ export const Panel = ({ dispatch, data }: ControlPanelProps<DataStructure>) => {
   };
 
   return (
-    <ControlPanel>
+    <ControlPanel data-testid="custom-control-panel">
       <PanelTitle>
-        <H3>Map Details</H3>
+        <H3>Map Settings</H3>
       </PanelTitle>
       <PanelContent>
         <div>
@@ -56,6 +56,7 @@ export const Panel = ({ dispatch, data }: ControlPanelProps<DataStructure>) => {
           <Label>Satellite</Label>
           <div>
             <StyledToggle
+              data-testid="custom-satellite-toggle"
               value={data.satellite}
               onClick={() => toggleMapStyle(!data.satellite)}
             />
