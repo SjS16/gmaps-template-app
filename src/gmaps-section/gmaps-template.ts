@@ -812,7 +812,7 @@ export const GMapsTemplate = {
                 y: "stretch",
               },
             },
-            gmaps: {
+            gmapsMobile: {
               order: 2,
               visible: true,
               column: {
@@ -882,7 +882,7 @@ export const GMapsTemplate = {
                 y: "stretch",
               },
             },
-            gmaps: {
+            gmapsMobile: {
               order: 1,
               visible: true,
               column: {
@@ -952,7 +952,7 @@ export const GMapsTemplate = {
                 y: "stretch",
               },
             },
-            gmaps: {
+            gmapsMobile: {
               order: 1,
               visible: true,
               column: {
@@ -1040,7 +1040,7 @@ export const GMapsTemplate = {
                 y: "stretch",
               },
             },
-            gmaps: {
+            gmapsMobile: {
               order: 3,
               visible: true,
               column: {
@@ -1110,7 +1110,7 @@ export const GMapsTemplate = {
                 y: "stretch",
               },
             },
-            gmaps: {
+            gmapsMobile: {
               order: 1,
               visible: true,
               column: {
@@ -1128,7 +1128,7 @@ export const GMapsTemplate = {
                 y: "center",
               },
             },
-            gmaps1: {
+            gmapsMobile1: {
               order: 2,
               visible: true,
               column: {
@@ -1146,7 +1146,7 @@ export const GMapsTemplate = {
                 y: "center",
               },
             },
-            gmaps2: {
+            gmapsMobile2: {
               order: 3,
               visible: true,
               column: {
@@ -1198,7 +1198,7 @@ export const GMapsTemplate = {
                 y: "stretch",
               },
             },
-            gmaps: {
+            gmapsMobile: {
               order: 1,
               visible: true,
               column: {
@@ -1268,7 +1268,7 @@ export const GMapsTemplate = {
                 y: "stretch",
               },
             },
-            gmaps: {
+            gmapsMobile: {
               order: 1,
               visible: true,
               column: {
@@ -1304,7 +1304,7 @@ export const GMapsTemplate = {
                 y: "center",
               },
             },
-            gmaps1: {
+            gmapsMobile1: {
               order: 3,
               visible: true,
               column: {
@@ -1340,7 +1340,7 @@ export const GMapsTemplate = {
                 y: "center",
               },
             },
-            gmaps2: {
+            gmapsMobile2: {
               order: 5,
               visible: true,
               column: {
@@ -1445,6 +1445,45 @@ export const GMapsTemplate = {
           },
         },
         gmaps2: {
+          placeholder: {
+            contentTypeId: "gmaps",
+            data: {
+              address: "Berlin",
+              height: 250,
+              width: 350,
+              satellite: false,
+              size: "fixed",
+            },
+            overrides: {},
+          },
+        },
+        gmapsMobile: {
+          placeholder: {
+            contentTypeId: "gmaps",
+            data: {
+              address: "New York",
+              height: 250,
+              width: 350,
+              satellite: false,
+              size: "fixed",
+            },
+            overrides: {},
+          },
+        },
+        gmapsMobile1: {
+          placeholder: {
+            contentTypeId: "gmaps",
+            data: {
+              address: "Vancouver, BC",
+              height: 250,
+              width: 350,
+              satellite: false,
+              size: "fixed",
+            },
+            overrides: {},
+          },
+        },
+        gmapsMobile2: {
           placeholder: {
             contentTypeId: "gmaps",
             data: {
