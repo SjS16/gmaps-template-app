@@ -14,7 +14,7 @@ const schema = Schema.object({
 export const Component = component({
   componentTypeId: "gmaps", // This is the id for your component in our system, must be camelCase. It is used to reference the component in places like templates
   displayName: "Google Maps",
-  tags: ["newControls"],
+  tags: ["newControls", "swappable"],
   schema: schema,
   Component: GMaps,
   version: migrations.length,
