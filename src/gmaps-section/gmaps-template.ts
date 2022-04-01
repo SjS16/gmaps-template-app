@@ -1422,7 +1422,7 @@ export const GMapsTemplate = {
           placeholder: {
             contentTypeId: "gmaps",
             data: {
-              address: "123 Main St",
+              address: "New York",
               height: 200,
               width: 300,
               satellite: false,
@@ -1435,7 +1435,7 @@ export const GMapsTemplate = {
           placeholder: {
             contentTypeId: "gmaps",
             data: {
-              address: "123 Vancouver St",
+              address: "Vancouver, BC",
               height: 200,
               width: 300,
               satellite: false,
@@ -1448,7 +1448,7 @@ export const GMapsTemplate = {
           placeholder: {
             contentTypeId: "gmaps",
             data: {
-              address: "123 Marine Dr",
+              address: "Berlin",
               height: 200,
               width: 300,
               satellite: false,
@@ -1503,7 +1503,7 @@ export const GMapsTemplate = {
           placeholder: {
             contentTypeId: "gmaps",
             data: {
-              address: "123 Main St",
+              address: "New York",
               height: 500,
               width: 500,
               satellite: false,

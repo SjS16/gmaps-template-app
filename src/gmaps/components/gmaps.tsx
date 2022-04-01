@@ -28,7 +28,7 @@ export const GMaps = ({
   const mapType = satellite ? "k" : "";
 
   const addressQuery = address;
-  // t=k for satellite
+
   const url_params = {
     q: addressQuery || "123 Main St",
     t: mapType,
