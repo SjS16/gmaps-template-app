@@ -1,4 +1,5 @@
 // eslint-disable-next-line
+import { BrushIcon } from "../../icons/brush";
 import { StyledMapsContainer } from "../styled";
 import { Panel } from "./control";
 import {
@@ -77,7 +78,7 @@ export const GMaps = ({
   );
 };
 
-const controlLabel = "Controls";
+const controlLabel = "Map Settings";
 
 export default WithControls(GMaps, [
   {
@@ -85,7 +86,7 @@ export default WithControls(GMaps, [
     label: controlLabel,
     Button: (props) => (
       <ControlButton label={controlLabel} active={false} {...props}>
-        Map Settings
+        <BrushIcon />
       </ControlButton>
     ),
     Panel,
