@@ -58,6 +58,7 @@ export const GMaps = ({
           marginHeight={0}
           marginWidth={0}
           frameBorder={0}
+          style={{ padding: "25px" }}
         ></iframe>
       )}
       {size === "responsive" && (
@@ -71,6 +72,7 @@ export const GMaps = ({
             marginHeight={0}
             marginWidth={0}
             frameBorder={0}
+            style={{ padding: "25px" }}
           ></iframe>
         </StyledMapsContainer>
       )}

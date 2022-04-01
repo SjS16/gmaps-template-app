@@ -1423,8 +1423,8 @@ export const GMapsTemplate = {
             contentTypeId: "gmaps",
             data: {
               address: "New York",
-              height: 200,
-              width: 300,
+              height: 250,
+              width: 350,
               satellite: false,
               size: "fixed",
             },
@@ -1436,8 +1436,8 @@ export const GMapsTemplate = {
             contentTypeId: "gmaps",
             data: {
               address: "Vancouver, BC",
-              height: 200,
-              width: 300,
+              height: 250,
+              width: 350,
               satellite: false,
               size: "fixed",
             },
@@ -1449,8 +1449,8 @@ export const GMapsTemplate = {
             contentTypeId: "gmaps",
             data: {
               address: "Berlin",
-              height: 200,
-              width: 300,
+              height: 250,
+              width: 350,
               satellite: false,
               size: "fixed",
             },
@@ -1504,8 +1504,8 @@ export const GMapsTemplate = {
             contentTypeId: "gmaps",
             data: {
               address: "New York",
-              height: 500,
-              width: 500,
+              height: 550,
+              width: 550,
               satellite: false,
               size: "fixed",
             },

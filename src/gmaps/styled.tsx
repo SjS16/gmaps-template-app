@@ -15,7 +15,7 @@ export const StyledGroupRadioButton = styled(GroupRadioButton)`
 `;
 
 export const StyledMapsContainer = styled.div`
-  padding: 0 0 0 0;
+  padding: 10 10 10 10;
   position: relative;
   height: 100%;
   width: 100%;
