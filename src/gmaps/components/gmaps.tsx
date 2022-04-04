@@ -17,46 +17,28 @@ export type DataStructure = {
   satellite: boolean;
   width: number;
   height: number;
-  size: string;
 };
 
 export const GMaps = ({
   data,
 }: ComponentProps<DataStructure, WithStylesProps>) => {
-  const { width, height, size } = data;
+  const { width, height } = data;
 
   const mapsUrl = getMapsUrl(data);
 
   return (
     <>
-      {size === "fixed" && (
-        <iframe
-          width={width}
-          height={height}
-          id="gmap_canvas"
-          src={mapsUrl}
-          scrolling="no"
-          marginHeight={0}
-          marginWidth={0}
-          frameBorder={0}
-          style={{ padding: "25px" }}
-        ></iframe>
-      )}
-      {size === "responsive" && (
-        <StyledMapsContainer>
-          <iframe
-            width={"100%"}
-            height={"100%"}
-            id="gmap_canvas"
-            src={mapsUrl}
-            scrolling="no"
-            marginHeight={0}
-            marginWidth={0}
-            frameBorder={0}
-            style={{ padding: "25px" }}
-          ></iframe>
-        </StyledMapsContainer>
-      )}
+      <iframe
+        width={width}
+        height={height}
+        id="gmap_canvas"
+        src={mapsUrl}
+        scrolling="no"
+        marginHeight={0}
+        marginWidth={0}
+        frameBorder={0}
+        style={{ padding: "25px" }}
+      ></iframe>
     </>
   );
 };

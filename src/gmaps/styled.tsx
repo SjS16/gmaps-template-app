@@ -1,21 +1,10 @@
 import {
-  GroupRadioButton,
   InputField,
   Toggle,
 } from "config/global-dependencies/smart-builder-components";
 import styled from "styled-components";
 
-export const StyledGroupRadioButton = styled(GroupRadioButton)`
-  label {
-    font-size: 20px;
-    display: contents;
-    color: #303030;
-    font-weight: 400;
-  }
-`;
-
 export const StyledMapsContainer = styled.div`
-  padding: 10 10 10 10;
   position: relative;
   height: 100%;
   width: 100%;

@@ -4,11 +4,10 @@ import { component, Schema } from "config/global-dependencies/ub-shared";
 import React from "react";
 
 const schema = Schema.object({
-  address: Schema.string(),
-  width: Schema.number(),
-  height: Schema.number(),
-  satellite: Schema.boolean(),
-  size: Schema.string(),
+  address: Schema.string().default("New York"),
+  width: Schema.number().default(350),
+  height: Schema.number().default(250),
+  satellite: Schema.boolean().default(false),
 }).noControls();
 
 export const Component = component({
